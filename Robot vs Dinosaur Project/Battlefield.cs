@@ -31,11 +31,13 @@ namespace Robot_vs_Dinosaur_Project
                 tRex.attack(bender);
                 Console.WriteLine($"{tRex.name} attacks {bender.name} for {tRex.attackPower}");
                 Console.WriteLine($"Bender has {bender.health} health left");
+                Console.WriteLine(" ");
                 if (bender.health > 0)
                 {
                     bender.attack(tRex);
-                    Console.WriteLine($"{bender.name} attacks {tRex.name} for {bender.activeWeapon.attackPower}");
+                    Console.WriteLine($"{bender.name} attacks {tRex.name} with spear for {bender.activeWeapon.attackPower}");
                     Console.WriteLine($"T-Rex has {tRex.health} health left");
+                    Console.WriteLine(" ");
                 }
             } 
 
